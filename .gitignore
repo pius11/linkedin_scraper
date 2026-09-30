@@ -1,0 +1,68 @@
+# ==========================================
+# Git Ignore for LinkedIn Scraper Project
+# ==========================================
+
+# 1. Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 2. Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# 3. SENSITIVE: LinkedIn Login Sessions & Cookies
+linkedin_session/
+*/linkedin_session/
+session/
+cookies/
+*.session
+cookies.json
+.auth/
+
+# 4. Scraper Outputs & Extracted Datasets
+output/
+*/output/
+*.csv
+*.xlsx
+*.xls
+*.jsonl
+
+# 5. Temporary, Log & Debug Files
+*.log
+*.html
+*.temp
+*.tmp
+scratch/
+
+# 6. Environment & Secret Configuration
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# 7. OS & IDE Metadata
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 8. Compressed Archives
+*.zip
+*.tar.gz
+*.rar
